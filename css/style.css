@@ -1,0 +1,296 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+:root {
+    --main-color: #37de6a;
+    --p-text: #d8d8d8;
+}
+
+/* Header */
+
+.container {
+    width: 1180px;
+    margin: 0px auto;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #282828;
+}
+
+.header__content {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list li {
+    list-style: none;
+    margin-left: 55px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.navbar__link:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.navbar__link-active {
+    color: var(--main-color);
+}
+
+.navbar__link-active:hover {
+    color: #9ce9b3;
+}
+
+/* Main */
+.main {
+    color: var(--p-text);
+}
+.home {
+    height: 650px;
+    background-color: #282828;
+}
+
+.home__mainly {
+    width: 100%;
+    height: 530px;
+    display: flex;
+}
+
+.home__mainly-head-container {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home__mainly-head {
+    width: 523px;
+    height: 241px;
+}
+
+.dmitry-name h2 {
+    color: #ccc;
+    font-size: 78px;
+    font-weight: 500;
+    margin-bottom: -40px;
+}
+
+.kuznetsov-surname h1 {
+    color: var(--main-color);
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.p-frontend-developer {
+    color: #b4b4b4;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.home__mainly-social {
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-social {
+    width: 55px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+a i {
+    color: var(--p-text);
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+a i:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.my-data-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-data {
+    width: 780px;
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--p-text);
+}
+
+.my-data__block {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-data__name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.my-data__value {
+    font-size: 16;
+    font-weight: 300;
+}
+
+/* About me */
+.about {
+    height: 730px;
+    background-color: #2d2d2d;
+}
+
+.block-title {
+    height: 182px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-title h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.about__block-content {
+    display: flex;
+}
+
+.about__image {
+    width: 380px;
+    height: 455px;
+}
+.image-about-me {
+    width: 100%;
+}
+
+.about__text {
+    width: 800px;
+    height: 455px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.about__text-paragraph {
+    width: 680px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #292929;
+}
+.portfolio__block-content {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+.portfolio-work {
+    width: 380px;
+    height: 246px;
+}
+
+.portfolio-work-image {
+    width: 380px;
+    height: 246px;
+}
+
+.more-portfolio {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+}
+.more-portfolio a {
+    color: var(--p-text);
+    font-size: 18px;
+    font-weight: 500;
+}
+.more-portfolio a:hover {
+    color: #fff;
+}

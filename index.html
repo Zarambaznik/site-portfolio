@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitry Kuznetsov</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +26,7 @@
                 <nav class="navbar">
                     <ul class="navbar__list">
                         <li>
-                            <a href="#" class="navbar__link">HOME</a>
+                            <a href="#" class="navbar__link navbar__link-active">HOME</a>
                         </li>
                         <li>
                             <a href="#" class="navbar__link">ABOUT ME</a>
@@ -48,45 +52,51 @@
         <div class="home">
             <div class="container">
                 <div class="home__mainly">
-                    <div class="home__mainly-head">
-                        <div class="dmitry-name">
-                            <h2>dmitry</h2>
-                        </div>
-                        <div class="kuznetsov-surname">
-                            <h1>KUZNETSOV</h1>
-                        </div>
-                        <div class="frontend-developer-paragraph">
-                            <p class="p-frontend-developer">
-                                Frontend-developer & Freelancer
-                            </p>
+                    <div class="home__mainly-head-container">
+                        <div class="home__mainly-head">
+                            <div class="dmitry-name">
+                                <h2>dmitry</h2>
+                            </div>
+                            <div class="kuznetsov-surname">
+                                <h1>KUZNETSOV</h1>
+                            </div>
+                            <div class="frontend-developer-paragraph">
+                                <p class="p-frontend-developer">
+                                    Frontend-developer & Freelancer
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="home__mainly-social">
-                        <div class="social">
+                        <div class="home-social">
                             <a href="https://www.instagram.com/zarambaznik/?hl=ru" class="insta" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="github"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="vk"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Zarambaznik" class="github" target="_blank"><i
+                                    class="fab fa-github-square"></i></a>
+                            <a href="https://vk.com/id375199115" class="vk" target="_blank"><i
+                                    class="fab fa-vk"></i></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="my-data">
-                    <div class="my-data__block">
-                        <div class="my-data__name">Location</div>
-                        <div class="my-data__value">Moscow</div>
-                    </div>
-                    <div class="my-data__block">
-                        <div class="my-data__name">Phone</div>
-                        <div class="my-data__value">+7(905)-568-27-78</div>
-                    </div>
-                    <div class="my-data__block">
-                        <div class="my-data__name">Web</div>
-                        <div class="my-data__value">dimasyasite.com</div>
-                    </div>
-                    <div class="my-data__block">
-                        <div class="my-data__name">Email</div>
-                        <div class="my-data__value">dmkuznetsov@mail.ru</div>
+                <div class="my-data-container">
+                    <div class="my-data">
+                        <div class="my-data__block">
+                            <div class="my-data__name">Location</div>
+                            <div class="my-data__value">Moscow</div>
+                        </div>
+                        <div class="my-data__block">
+                            <div class="my-data__name">Phone</div>
+                            <div class="my-data__value">+7(905)-568-27-78</div>
+                        </div>
+                        <div class="my-data__block">
+                            <div class="my-data__name">Web</div>
+                            <div class="my-data__value">dimasyasite.com</div>
+                        </div>
+                        <div class="my-data__block">
+                            <div class="my-data__name">Email</div>
+                            <div class="my-data__value">dmkuznetsov@mail.ru</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,24 +109,30 @@
                     <div class="block-title">
                         <h3>About me</h3>
                     </div>
-                    <div class="block-content">
+                    <div class="about__block-content">
                         <div class="about__image">
-                            <img src="#" alt="Photo of me">
+                            <img src="img/about-me-balvanka.jpg" alt="Photo of me" class="image-about-me">
                         </div>
                         <div class="about__text">
-                            <p> Делаю сайты вкусно, красиво, быстро, правильно и качественно. Любой слжности. Если Вам
-                                нужен тот
-                                кто сделает ваш личный сайт
-                                непревзойденным, самым лучшим во всей галактике. кто наладит Вам продажи и даже
-                                сосватает с
-                                вашей будущей женой, то наверное
-                                это не ко мне - потому что я программист и уж точно не сноха едрид мадрид.
+                            <div class="about__text-paragraph">
+                                <p>Делаю сайты вкусно, красиво, быстро, правильно и
+                                    качественно. Любой слжности. Если Вам
+                                    нужен тот
+                                    кто сделает ваш личный сайт
+                                    непревзойденным, самым лучшим во всей галактике. кто наладит Вам продажи и даже
+                                    сосватает с
+                                    вашей будущей женой, то наверное
+                                    это не ко мне - потому что я программист и уж точно не сноха едрид мадрид.
+                                </p>
                                 <br>
-                                Если Вам интересно посмотреть на мой путь - прошу к нашему шалашу - #100daysofcode, где
-                                я каждый
-                                день выкладываю пост о
-                                пройденном пути в программировании.
-                            </p>
+                                <p>
+                                    Если Вам интересно посмотреть на мой путь - прошу к нашему шалашу - #100daysofcode,
+                                    где
+                                    я каждый
+                                    день выкладываю пост о
+                                    пройденном пути в программировании.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,11 +146,28 @@
                     <div class="block-title">
                         <h3>Portfolio</h3>
                     </div>
-                    <div class="block-content">
-
+                    <div class="portfolio__block-content">
+                        <div class="portfolio-work">
+                            <img src="img/portfolio-balvanka.jpg" alt="My work" class="portfolio-work-image">
+                        </div>
+                        <div class="portfolio-work">
+                            <img src="img/portfolio-balvanka.jpg" alt="My work" class="portfolio-work-image">
+                        </div>
+                        <div class="portfolio-work">
+                            <img src="img/portfolio-balvanka.jpg" alt="My work" class="portfolio-work-image">
+                        </div>
+                        <div class="portfolio-work">
+                            <img src="img/portfolio-balvanka.jpg" alt="My work" class="portfolio-work-image">
+                        </div>
+                        <div class="portfolio-work">
+                            <img src="img/portfolio-balvanka.jpg" alt="My work" class="portfolio-work-image">
+                        </div>
+                        <div class="portfolio-work">
+                            <img src="img/portfolio-balvanka.jpg" alt="My work" class="portfolio-work-image">
+                        </div>
                     </div>
                     <div class="more-portfolio">
-                        <a href="#" class="look-more"></a>
+                        <a href="#" class="look-more">Look more</a>
                     </div>
                 </div>
             </div>
@@ -281,7 +314,7 @@
                         </div>
                     </div>
                     <div class="footer__mainly-social">
-                        <div class="social">
+                        <div class="footer-social">
                             <a href="https://www.instagram.com/zarambaznik/?hl=ru" class="insta" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
