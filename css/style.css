@@ -407,3 +407,129 @@ a i:hover {
 .footer-social a {
     margin-left: 30px;
 }
+
+@media (max-width: 900px) {
+    .container {
+        width: 738px;
+        margin: 0px auto;
+    }
+
+    /* Header */
+    .navbar {
+        display: none;
+    }
+
+    /* Main */
+
+    /* Home */
+    .home {
+        background-color: #282828;
+    }
+
+    .home__mainly {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__mainly-head-container {
+        width: 482px;
+        height: 281px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__mainly-head {
+        width: 480px;
+        height: 205px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dmitry-name {
+        width: 222px;
+        height: 77px;
+    }
+    .dmitry-name h2 {
+        font-size: 56px;
+    }
+    .kuznetsov-surname h1 {
+        font-size: 68px;
+    }
+    .p-frontend-developer {
+        font-size: 26px;
+    }
+    .home__mainly-social {
+        width: auto;
+        display: block;
+    }
+    .home-social {
+        width: 156px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    a i {
+        font-size: 32px;
+    }
+    /* Data */
+    .my-data-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-data {
+        width: 482px;
+        height: 226px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .my-data__block {
+        width: 224px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* About */
+    .about {
+        height: 435px;
+    }
+    .block-title {
+        height: 132px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-title h3 {
+        font-size: 24px;
+    }
+
+    .about__image {
+        display: none;
+    }
+    .about__text {
+        width: 738px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .about__text-paragraph {
+        width: 738px;
+    }
+
+    /* Portfolio */
+}
