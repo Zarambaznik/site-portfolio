@@ -350,10 +350,6 @@ a i:hover {
     background-color: #0a0a0a;
 }
 
-.footer__block {
-    margin: 0 0 0 auto;
-}
-
 .footer-container {
     display: flex;
     justify-content: flex-end;
@@ -408,7 +404,7 @@ a i:hover {
     margin-left: 30px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .container {
         width: 738px;
         margin: 0px auto;
@@ -532,4 +528,85 @@ a i:hover {
     }
 
     /* Portfolio */
+    .portfolio__block-content {
+        height: 512px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1vw;
+    }
+    .portfolio-work-image {
+        width: 354px;
+        height: 229px;
+    }
+    .table-display-none {
+        display: none;
+    }
+    /* Tech */
+    .technologies {
+        height: 580px;
+    }
+    .block-content-tech {
+        width: 738px;
+        height: auto;
+        grid-template-columns: 354px 354px;
+        grid-template-rows: 76px 76px 76px 76px;
+        grid-gap: 18px;
+    }
+
+    .tech-element {
+        width: 354px;
+        height: 76px;
+    }
+
+    .tech-element__image {
+        width: 76px;
+        height: 76px;
+    }
+
+    .tech-element__name {
+        width: 256px;
+        height: 75px;
+    }
+    /* Footer */
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 550px;
+    }
+
+    .footer__block {
+        width: 482px;
+        height: 450px;
+    }
+
+    .footer__mainly {
+        width: 482px;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer__mainly-head {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__mainly-social {
+        width: 255px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-social a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
