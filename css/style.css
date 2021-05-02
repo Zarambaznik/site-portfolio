@@ -610,3 +610,229 @@ a i:hover {
         margin-right: 15px;
     }
 }
+
+/* media for mobile */
+
+@media (max-width: 768px) {
+    .container {
+        width: 290px;
+        margin: 0px auto;
+    }
+
+    /* Header */
+    .navbar {
+        display: none;
+    }
+
+    /* Main */
+
+    /* Home */
+    .home {
+        height: 272px;
+    }
+
+    .home__mainly {
+        height: 272px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__mainly-head-container {
+        width: 290px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home__mainly-head {
+        width: 480px;
+        height: 205px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dmitry-name {
+        width: 290px;
+        height: 40px;
+    }
+    .dmitry-name h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .kuznetsov-surname h1 {
+        font-size: 40px;
+    }
+    .p-frontend-developer {
+        font-size: 14px;
+    }
+
+    .home-social {
+        width: 126px;
+        height: 32px;
+    }
+
+    a i {
+        font-size: 24px;
+    }
+    /* Data */
+    .my-data-container {
+        display: none;
+    }
+
+    /* About */
+    .about {
+        height: 540px;
+    }
+    .block-title {
+        height: 92px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block-title h3 {
+        font-size: 20px;
+    }
+
+    .about__image {
+        display: none;
+    }
+    .about__text {
+        width: 290px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .about__text-paragraph {
+        width: 290px;
+        height: 360px;
+    }
+    .about__text-paragraph p {
+        font-size: 16px;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        height: 345px;
+    }
+    .portfolio__block-content {
+        height: 280px;
+        display: block;
+    }
+    .portfolio-work-image {
+        width: 290px;
+        height: 188px;
+    }
+
+    .mobile-display-none {
+        display: none;
+    }
+
+    .more-portfolio {
+        display: none;
+    }
+
+    /* Tech */
+    .technologies {
+        height: 700px;
+    }
+    .block-content-tech {
+        width: 290px;
+        height: auto;
+        display: block;
+    }
+
+    .tech-element {
+        width: 290px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .tech-element__image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tech-element__image i {
+        font-size: 36px;
+    }
+
+    .tech-element__name {
+        width: 240px;
+        height: 50px;
+    }
+
+    .tech-element__name-paragraph {
+        font-size: 18px;
+        margin-left: 24px;
+    }
+    /* Footer */
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 640px;
+    }
+
+    .footer__block {
+        display: block;
+        width: 320px;
+        height: 520px;
+    }
+    .my-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 290px;
+        height: 345px;
+    }
+
+    .footer__mainly {
+        width: 290px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer__mainly-head {
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__dmitry-name,
+    .footer__kuznetsov-surname {
+        width: 290px;
+        height: 44px;
+        text-align: center;
+    }
+
+    .footer__h2-dmitry-name {
+        font-size: 36px;
+    }
+
+    .footer__h1-kuznetsov-surname {
+        font-size: 40px;
+    }
+
+    .footer__mainly-social {
+        width: 255px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-social a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
